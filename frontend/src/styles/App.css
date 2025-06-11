@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ef 100%);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 2.5rem 2rem;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(60, 72, 88, 0.12);
+}
+
+h1, h2, h3, h4 {
+  color: #1a365d;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+nav {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a, nav button {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover, nav button:hover {
+  background: #e0e7ef;
+  color: #1a365d;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(60, 72, 88, 0.06);
+}
+
+input, select, textarea, button {
+  padding: 0.7rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #2563eb;
+}
+
+button {
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 2px 8px rgba(60, 72, 88, 0.08);
+}
+
+button:hover {
+  background: linear-gradient(90deg, #1e40af 0%, #2563eb 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: #f1f5f9;
+  margin-bottom: 0.7rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(60, 72, 88, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+label {
+  font-weight: 500;
+  color: #334155;
+  margin-bottom: 0.3rem;
+}
+
+fieldset {
+  border: 1px solid #cbd5e1;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.error, .mensaje, .success {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.error {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+}
+
+.success, .mensaje {
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #6ee7b7;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #e0e7ef;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 8px;
+}
